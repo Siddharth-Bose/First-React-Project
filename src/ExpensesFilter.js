@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './ExpensesFilter.css';
 
 const ExpensesFilter = () => {
+  const [enteredYear,setEnteredYear] = useState('');
   const clickHandler= (event)=>{
-    console.log(event.target.value);
+    setEnteredYear(event.target.value);
+    console.log(enteredYear);
   }
+  
   return (
     <div className='expenses-filter'>
       <div className='expenses-filter__control'>
