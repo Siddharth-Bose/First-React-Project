@@ -8,7 +8,12 @@
   border-radius: 12px;
   background-color: #4b4b4b;
 }
-
+.expenses__not-found{
+  
+  text-align:center;
+  font-weight: bold;
+  color:white;
+}
 .expense-item__description {
   display: flex;
   flex-direction: column;
